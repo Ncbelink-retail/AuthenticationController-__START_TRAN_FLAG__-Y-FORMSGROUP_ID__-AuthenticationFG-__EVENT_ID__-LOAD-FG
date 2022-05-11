@@ -1,0 +1,457 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Calibri;
+    src: url(/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Boldy;
+    src: url(/OpenSans-Bold.ttf);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../Img/bg-image.jpg);
+}
+
+    .NCB-logo{
+        position: absolute;
+        width: 13rem;
+        top: 20px;
+        left: 16px;
+    }
+
+    .welcome{
+        position: absolute;
+        bottom: 30px;
+        left: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 200;
+        font-size: 28px;
+        color: white;
+    }
+
+    .centerbox{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 48rem;
+        height: 18rem;
+        background-image: linear-gradient(to bottom, #287cc5, #2269ac, #1a5894, #11467c, #073665);
+    }
+
+    .centerbox-2{
+        background-image: url(../Img/newsbg.png);
+        background-color: white;
+        position: absolute;
+        right: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 32rem;
+        height: 18rem;
+    }
+
+    .centerbox-2:before {
+        content: ' ';
+        height: 0;
+        position: absolute;
+        width: 0;
+        left: -40px;
+        bottom: 2rem;
+        border: 20px solid transparent;
+        border-right-color: white;
+    }
+
+        .login{
+            position: relative;
+            font-size: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            color: #174786;
+            left: 70px;
+            top: 18px;
+        }
+
+        .user-image{
+            width: 15px;
+            position: absolute;
+            right: 5rem;
+            top: 5rem;
+            z-index: 1;
+        }
+
+        .lock-image{
+            width: 15px;
+            position: absolute;
+            right: 5rem;
+            top: 7rem;
+            z-index: 1;
+        }
+
+        .eye-image{
+            width: 15px;
+            position: absolute;
+            right: 6.5rem;
+            top: 7rem;
+            z-index: 1;
+        }
+
+        .username{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(165, 165, 165);
+            outline: none;
+            position: relative;
+            padding: 6px 0 6px 12px;
+            top: 30px;
+            left: 70px;
+            width: 22rem;
+            font-size: 18px;
+        }
+
+        .username:focus{
+            border-bottom: 2px solid #5264AE;
+        }
+
+        ::placeholder{
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+        }
+
+        .checkbox{
+            display: flex;
+            top: 7.5rem;
+            left: 70px;
+            position: absolute;
+        }
+
+        .checkbox input{
+            width: 14px;
+            height: 14px;
+            background-color: transparent;
+            opacity: 0.6;
+        }
+
+        .checkbox h3{
+            margin-left: 10px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        .info-image{
+            width: 14px;
+            height: 14px;
+            margin: 3px 0 0 10px;
+            opacity: 0.7;
+        }
+
+        .continue{
+            text-decoration: none;
+            position: absolute;
+            right: 5rem;
+            bottom: 5rem;
+            padding: 10px 60px;
+            background-color: #00539B;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            box-shadow: 1px 1px 4px #003461;
+            border: none;
+        }
+
+        .bottom-links{
+            position: absolute;
+            bottom: 1.6rem;
+            left: 70px;
+            font-size: 13px;
+        }
+
+        .bottom-links a{
+            margin-right: 30px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .bottom-links a span{
+            text-decoration: underline;
+        }
+
+.container-2{
+    width: 35rem;
+    height: 20px;
+    margin: auto;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-2 a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.container-2 h6{
+    color: white;
+    font-weight: bold;
+}
+
+.more-details{
+    font-size: 13px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footbar{
+    width: 100%;
+    height: 3.8rem;
+    bottom: 0;
+    position: absolute;
+    background-color: #00539B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+/* Token Page */
+.token-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F5F5F5;
+}
+
+.bluebar{
+    width: 100%;
+    height: 4rem;
+}
+
+.token-ncblogo{
+    width: 14rem;
+    margin: 1.5rem 0 0 3rem;
+}
+
+.enter-token{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    background-image: url(../Img/newsbg.png);
+}
+
+.header-token{
+    height: 2rem;
+    background-color: #00539B;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-token h1{
+    color: white;
+    text-align: center;
+}
+
+.enter-token h2{
+    margin: 30px 10px 0 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.token-field{
+    margin: 20px 0 0 0;
+    padding: 6px 0 6px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #F5F5F5;
+    border: 1px solid #00539B;
+    outline: none;
+}
+
+.token-submit{
+    text-decoration: none;
+    padding: 10px 60px;
+    background-color: #00539B;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 1px 1px 4px #003461;
+    border: none;
+    margin: 20px 0 0 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+/* Session Expired page */
+.expired-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F5F5F5;
+}
+
+.exp-topbar{
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+}
+
+.exp-cont1{
+    width: 60rem;
+    height: 30rem;
+    background-color: white;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 6px rgba(85, 85, 85, 0.596);
+}
+
+.exp-cont2{
+    width: 55rem;
+    height: 25rem;
+    margin: auto;
+    padding-top: 35px;
+    position: relative;
+}
+
+.warning-logo{
+    position: absolute;
+    right: 0;
+}
+
+.security-error{
+    font-weight: bold;
+    font-size: 20px;
+    color: #0F9CFF;
+}
+
+.this-error{
+    font-size: 16px;
+}
+
+.exp-cont2 ul{
+    margin-left: 16px;
+}
+
+.exp-cont2 ul li{
+    opacity: 0.5;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.go-to-login{
+    font-size: 14px;
+    background-color: #0069d9;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: -1px;
+    word-spacing: 3px;
+    position: absolute;
+    bottom: 2rem;
+    left: 19rem;
+}
+
+
+
+
+/* Other devices config */
+@media screen and (max-width: 500px) {
+    .centerbox{
+        width: 90%;
+        height: 11rem;
+        margin-top: -3rem;
+    }
+
+    .centerbox-2:before{
+        display: none;
+    }
+
+    .NCB-logo{
+        width: 17rem;
+        top: 20px;
+    }
+
+    .welcome{
+        font-size: 35px;
+    }
+
+    .centerbox-2{
+        width: 100%;
+        margin-top: 10.5rem;
+        border-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .username{
+        width: 13.5rem;
+        font-size: 18px;
+    }
+
+    .container-2{
+        width: 100%;
+        margin-top: 20rem;
+        justify-content: center;
+    }
+
+    .login{
+        width: 10rem;
+    }
+
+    .continue{
+        right: 5.5rem;
+    }
+
+    .bottom-links{
+        left: 3rem;
+    }
+
+    .bottom-links a{
+        text-align: center;
+    }
+
+    .footbar{
+        display: non;
+    }
+  }
+
+
+  
+ 
